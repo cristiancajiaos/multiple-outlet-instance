@@ -1,1 +1,10 @@
-<p>layout works!</p>
+<div class="row">
+  <div *ngFor="let number of numbers" class="col-lg-3">
+    <div *ngTemplateOutlet="foo"></div>
+  </div>
+</div>
+
+<ng-template #foo>
+  <h2>Content</h2>
+  <p>Hello, world!</p>
+</ng-template>
